@@ -31,8 +31,8 @@ function listen(io) {
     socket.on('disconnect', (reason) => {
       console.log(`Client ${socket.id} disconnected: ${reason}`);
       socket.leave(room);
-    });   
-  })
+    });
+  });
 }
 
 module.exports = {
